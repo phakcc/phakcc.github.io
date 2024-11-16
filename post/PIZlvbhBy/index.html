@@ -1,0 +1,231 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>一次Azure退款经历 | PHAK</title>
+<link rel="shortcut icon" href="https://phakcc.github.io/favicon.ico?v=1731726785473">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://phakcc.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="一次Azure退款经历 | PHAK - Atom Feed" href="https://phakcc.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="上个月 Azure OpenAI 莫名其妙产生一笔¥7500的费用，后来查明了是自己不清楚定价误部署了 PTU 定价的模型而产生的，所以想申请退款。但过程有点波折和迷惑，写下来做个分享。：）
+
+
+事情经过
+
+8月中旬，我已经发现并查明问题，..." />
+    <meta name="keywords" content="cloud" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://phakcc.github.io">
+  </a>
+  <h1 class="site-title">
+    PHAK
+  </h1>
+  <p class="site-description">
+    Personal Handbook of A* Knowledge.
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              一次Azure退款经历
+            </h2>
+            <div class="post-info">
+              <span>
+                2024-09-12
+              </span>
+              <span>
+                3 min read
+              </span>
+              
+                <a href="https://phakcc.github.io/tag/YBD_Cs8nP/" class="post-tag">
+                  # cloud
+                </a>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://www.albrechtsolutions.com/wp-content/uploads/2022/11/azure-cloud-itaf.jpg" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>上个月 Azure OpenAI 莫名其妙产生一笔¥7500的费用，后来查明了是自己不清楚定价误部署了 PTU 定价的模型而产生的，所以想申请退款。但过程有点波折和迷惑，写下来做个分享。：）</p>
+<!-- more -->
+<figure data-type="image" tabindex="1"><img src="https://s2.loli.net/2024/09/14/OEiq9FtwrvgSIJf.png" alt="账单中出现意外的巨额费用" loading="lazy"></figure>
+<h1 id="事情经过">事情经过</h1>
+<ol>
+<li>8月中旬，我已经发现并查明问题，我到「帮助和支持」尝试创建支持请求，发现「推荐的解决方案」中有退款选项，进去之后，发现只能选择已生成的发票进行退款，当时8月账单发票还未生成。<br>
+<img src="https://s2.loli.net/2024/09/14/WygdtfVTo8cQauk.png" alt="推荐的解决方案中的&quot;请求退款&quot;" loading="lazy"></li>
+<li>9月初，等到8月账单发票生成后，我再次到「帮助和支持」，选择退款、要退款的发票、填写原因、要退款的费用项，但系统告诉我“已经达到快速退款限制，请转到帮助和支持”。这又折回到开头了。</li>
+<li>随后，我到处找可以邮件联系 Azure 支持的选项，没有结果。打算删号放弃了。期间我发现似乎将「支持计划」从「基本」升级到「开发者」一档，可以获得更多支持，但是每个月要花 $29。</li>
+<li>再过了几天，我在<a href="https://learn.microsoft.com/en-us/answers/questions/1355572/how-to-bypass-expedited-refund-limit-reached-in-az">论坛帖子</a>找到解决办法，顺利发起了工单，当晚收到邮件说已经核实情况属实，帮我提交了费用减免申请。半夜，我看到原账单和发票作废，生成了新账单和发票，大额费用免掉了。<br>
+<img src="https://s2.loli.net/2024/09/14/SXrxGws1dFCjhoe.png" alt="支持工程师很快回信说帮我申请免除" loading="lazy"><br>
+<img src="https://s2.loli.net/2024/09/14/YrAaQoyOIslvKLZ.png" alt="成功了，官网显示Rebill信息比回信时间更早" loading="lazy"></li>
+</ol>
+<h1 id="经验总结">经验总结</h1>
+<ol>
+<li><strong>常规工单入口很隐蔽</strong> 微软会先根据你的「1.问题描述」，为你智能提供若干「2.推荐的解决方案」，这些都是需要用户自助的。而常规工单入口，只需要你在「2.推荐的解决方案」界面，点「返回支持请求」，此时回到2，再点击「下一步」，就进入了「3.其他详细信息」，可以手动补充信息，创建后可以与支持工程师取得邮件或电话联系。<br>
+<img src="https://s2.loli.net/2024/09/14/kySMiQDuHzTq7sx.png" alt="返回支持请求到步骤2，再点击下一步" loading="lazy"><br>
+微软你藏得好深啊！我都骂娘了要！给老子改！<br>
+<img src="https://s2.loli.net/2024/09/14/TgBIiceNFmq3QlC.png" alt="在步骤3填写需要获得支持的补充信息" loading="lazy"></li>
+<li><strong>发现问题立即发起支持</strong> 按照这个思路，不需要等到账单出来的时候再申请，最好在你发现问题的时候就提出来。否则，你可能像我一样，因担心无法退款，临时调低信用卡单笔支付额度以拒绝支付，导致扣款失败，信用卡短暂冻结。</li>
+</ol>
+<p>希望对大家有帮助，有需要可以联系我。</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E4%BA%8B%E6%83%85%E7%BB%8F%E8%BF%87">事情经过</a></li>
+<li><a href="#%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93">经验总结</a></li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://phakcc.github.io/post/yGNWwa6rN/">
+              <h3 class="post-title">
+                记账
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: 'd7fac239a651722f4576',
+    clientSecret: 'e217de72f3ec8eda27a0df16ddf19e4513adac9c',
+    repo: 'phakcc.github.io',
+    owner: 'phakcc',
+    admin: ['phakcc'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  <div class="info">
+  2024 © toraPHAK
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+        <a href="https://t.phak.cc" target="_blank">
+          <i class="ri-weibo-line"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+  <a class="rss" href="https://phakcc.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,263 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>视频转码时保留元数据 | PHAK</title>
+<link rel="shortcut icon" href="https://phakcc.github.io/favicon.ico?v=1731726785473">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://phakcc.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="视频转码时保留元数据 | PHAK - Atom Feed" href="https://phakcc.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="最近有几个旧相机拍摄的视频需要转码，但转码后发现相机生产商、相机型号、视频创建日期等元数据丢失。这篇文章记录了一次用 exiftool 保留视频文件元数据的实践。
+
+转码的需求主要来源是，我需要用 digikam 来管理照片和视频，而这些视..." />
+    <meta name="keywords" content="exif,media" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://phakcc.github.io">
+  </a>
+  <h1 class="site-title">
+    PHAK
+  </h1>
+  <p class="site-description">
+    Personal Handbook of A* Knowledge.
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              视频转码时保留元数据
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-12-29
+              </span>
+              <span>
+                4 min read
+              </span>
+              
+                <a href="https://phakcc.github.io/tag/6hGWMU840/" class="post-tag">
+                  # exif
+                </a>
+              
+                <a href="https://phakcc.github.io/tag/vwJKM_x3Jd/" class="post-tag">
+                  # media
+                </a>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://res.cloudinary.com/codenote-net/image/upload/w_auto:100:582,f_auto,q_auto/v1555944471/ExifTool.png" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>最近有几个旧相机拍摄的视频需要转码，但转码后发现相机生产商、相机型号、视频创建日期等元数据丢失。这篇文章记录了一次用 exiftool 保留视频文件元数据的实践。</p>
+<!-- more -->
+<p>转码的需求主要来源是，我需要用 digikam 来管理照片和视频，而这些视频的编码格式不受软件支持。这些视频是用 PENTAX Optio H90 拍摄的，封装格式为 AVI。</p>
+<p>保留元数据的目的是，我希望在 digikam 中能通过拍摄时间、相机型号对照片和视频排序。</p>
+<p>注：下列 shell 环境主要为 Powershell。</p>
+<h2 id="1-源文件元数据分析">1 源文件元数据分析</h2>
+<p>查看视频文件的元数据</p>
+<pre><code class="language-shell">exiftool -G1 -s -a
+</code></pre>
+<h2 id="11-设备型号">1.1 设备型号</h2>
+<ul>
+<li>名为 <code>MakerNotes</code> 的元数据节中记录了 <code>Make</code> 和 <code>Model</code>。但这似乎是设备厂商自定义的元数据节。</li>
+<li>标准的 <code>EXIF</code> 元数据节中没有记录设备型号。因此即便是源文件，也无法被主流软件读出设备型号。</li>
+</ul>
+<h2 id="12-拍摄时间">1.2 拍摄时间</h2>
+<ul>
+<li>仅有名为 <code>RIFF:DateTimeOriginal</code> 的元数据标签记录了视频的拍摄时间。</li>
+</ul>
+<h2 id="2-转换结果分析">2 转换结果分析</h2>
+<p>使用 Adobe Media Encoder 转码后文件的元数据情况如下：</p>
+<ul>
+<li>设备型号。<code>MakerNotes</code> 全部丢失，<code>Make</code> 丢失，<code>Model</code> 丢失；</li>
+<li>拍摄时间。<code>RIFF:DateTimeOriginal</code> 被存储至 <code>XMP-exif:DateTimeOriginal</code>，但在 macOS 访达、digikam 中，该元数据无法被识别为拍摄时间；</li>
+<li>其他时间。新增的 <code>QuickTime:CreateDate</code>、<code>QuickTime:ModifyDate</code>、<code>XMP-xmp:CreateDate</code>、<code>XMP-xmp:ModifyDate</code> 元数据标签均为转码时间，即新文件创建时间，而非拍摄时间。</li>
+</ul>
+<p>关于拍摄时间的问题，经过了解，一般认为，<code>XMP-exif</code> 不是标准元数据节，<code>xmp-tiff</code> 更为通用。</p>
+<h2 id="3-解决问题">3 解决问题</h2>
+<p>目标很明确，要在主要应用程序中正确读取到上述数据。</p>
+<h2 id="31-增加设备型号元数据">3.1 增加设备型号元数据</h2>
+<p>经过测试，<code>xmp-tiff</code> 是设备型号数据常用的元数据节，可以被访达、digikam 读取。根据前面的分析，由于转码后设备型号被丢弃，这里需要对转码后的视频文件进行手动写入元数据。对同一批旧视频、器材一致的情况，需要写入的内容是固定的，比较好操作。</p>
+<pre><code class="language-shell"># 单个文件的处理 exiftool -Make='PENTAX' -Model='PENTAX Optio H90' IMGP0982.mp4
+# 批量文件的处理，Winodws exiftool -Make='PENTAX' -Model='PENTAX Optio H90' mp4
+</code></pre>
+<p>上述命令实现的结果是，将 <code>Make</code> 和 <code>Model</code> 写入到目标文件 <code>xmp-tiff</code> 元数据节下。</p>
+<h2 id="32-复制拍摄时间元数据">3.2 复制拍摄时间元数据</h2>
+<p>经过测试，<code>XMP-xmp</code>、<code>QuickTime</code> 是拍摄时间数据常用的元数据节。根据前面的分析，由于拍摄时间未丢失，这里需要依据每一个目标文件的 <code>XMP-exif:DateTimeOriginal</code> 来更新 <code>XMP-xmp</code>、<code>QuickTime</code> 等元数据节中的时间标签。</p>
+<pre><code class="language-shell"># 单个文件的处理 exiftool &quot;-AllDates&lt;XMP-exif:DateTimeOriginal&quot; IMGP0982.mp4
+# 批量文件的处理，macOS exiftool &quot;-AllDates&lt;XMP-exif:DateTimeOriginal&quot; mp4
+</code></pre>
+<p>执行后，目标文件的日期时间相关元数据标签被改写，包括：</p>
+<ul>
+<li><code>QuickTime:CreateDate</code></li>
+<li><code>QuickTime:ModifyDate</code></li>
+<li><code>XMP-xmp:CreateDate</code></li>
+<li><code>XMP-xmp:ModifyDate</code></li>
+<li><code>UserData:DateTimeOriginal</code></li>
+</ul>
+<p>至于 <code>ModifyDate</code>，我个人倾向于认为是媒体文件被修改的时间，例如截取、裁剪、信息修改等，虽然也被调整为拍摄时间，但拍摄时间比较重要，也就无所谓了。</p>
+<h2 id="参考">参考</h2>
+<ul>
+<li><a href="https://exiftool.org/TagNames/Shortcuts.html">exiftool shortcuts tags</a></li>
+</ul>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#1-%E6%BA%90%E6%96%87%E4%BB%B6%E5%85%83%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">1 源文件元数据分析</a></li>
+<li><a href="#11-%E8%AE%BE%E5%A4%87%E5%9E%8B%E5%8F%B7">1.1 设备型号</a></li>
+<li><a href="#12-%E6%8B%8D%E6%91%84%E6%97%B6%E9%97%B4">1.2 拍摄时间</a></li>
+<li><a href="#2-%E8%BD%AC%E6%8D%A2%E7%BB%93%E6%9E%9C%E5%88%86%E6%9E%90">2 转换结果分析</a></li>
+<li><a href="#3-%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98">3 解决问题</a></li>
+<li><a href="#31-%E5%A2%9E%E5%8A%A0%E8%AE%BE%E5%A4%87%E5%9E%8B%E5%8F%B7%E5%85%83%E6%95%B0%E6%8D%AE">3.1 增加设备型号元数据</a></li>
+<li><a href="#32-%E5%A4%8D%E5%88%B6%E6%8B%8D%E6%91%84%E6%97%B6%E9%97%B4%E5%85%83%E6%95%B0%E6%8D%AE">3.2 复制拍摄时间元数据</a></li>
+<li><a href="#%E5%8F%82%E8%80%83">参考</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: 'd7fac239a651722f4576',
+    clientSecret: 'e217de72f3ec8eda27a0df16ddf19e4513adac9c',
+    repo: 'phakcc.github.io',
+    owner: 'phakcc',
+    admin: ['phakcc'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  <div class="info">
+  2024 © toraPHAK
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+        <a href="https://t.phak.cc" target="_blank">
+          <i class="ri-weibo-line"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+  <a class="rss" href="https://phakcc.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

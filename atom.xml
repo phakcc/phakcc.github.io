@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://phakcc.github.io</id>
+    <title>PHAK</title>
+    <updated>2024-11-16T03:13:10.356Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://phakcc.github.io"/>
+    <link rel="self" href="https://phakcc.github.io/atom.xml"/>
+    <subtitle>Personal Handbook of A* Knowledge.</subtitle>
+    <logo>https://phakcc.github.io/images/avatar.png</logo>
+    <icon>https://phakcc.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2024, PHAK</rights>
+    <entry>
+        <title type="html"><![CDATA[一次Azure退款经历]]></title>
+        <id>https://phakcc.github.io/post/PIZlvbhBy/</id>
+        <link href="https://phakcc.github.io/post/PIZlvbhBy/">
+        </link>
+        <updated>2024-09-12T08:26:07.000Z</updated>
+        <summary type="html"><![CDATA[<p>上个月 Azure OpenAI 莫名其妙产生一笔¥7500的费用，后来查明了是自己不清楚定价误部署了 PTU 定价的模型而产生的，所以想申请退款。但过程有点波折和迷惑，写下来做个分享。：）</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>上个月 Azure OpenAI 莫名其妙产生一笔¥7500的费用，后来查明了是自己不清楚定价误部署了 PTU 定价的模型而产生的，所以想申请退款。但过程有点波折和迷惑，写下来做个分享。：）</p>
+<!-- more -->
+<figure data-type="image" tabindex="1"><img src="https://s2.loli.net/2024/09/14/OEiq9FtwrvgSIJf.png" alt="账单中出现意外的巨额费用" loading="lazy"></figure>
+<h1 id="事情经过">事情经过</h1>
+<ol>
+<li>8月中旬，我已经发现并查明问题，我到「帮助和支持」尝试创建支持请求，发现「推荐的解决方案」中有退款选项，进去之后，发现只能选择已生成的发票进行退款，当时8月账单发票还未生成。<br>
+<img src="https://s2.loli.net/2024/09/14/WygdtfVTo8cQauk.png" alt="推荐的解决方案中的&quot;请求退款&quot;" loading="lazy"></li>
+<li>9月初，等到8月账单发票生成后，我再次到「帮助和支持」，选择退款、要退款的发票、填写原因、要退款的费用项，但系统告诉我“已经达到快速退款限制，请转到帮助和支持”。这又折回到开头了。</li>
+<li>随后，我到处找可以邮件联系 Azure 支持的选项，没有结果。打算删号放弃了。期间我发现似乎将「支持计划」从「基本」升级到「开发者」一档，可以获得更多支持，但是每个月要花 $29。</li>
+<li>再过了几天，我在<a href="https://learn.microsoft.com/en-us/answers/questions/1355572/how-to-bypass-expedited-refund-limit-reached-in-az">论坛帖子</a>找到解决办法，顺利发起了工单，当晚收到邮件说已经核实情况属实，帮我提交了费用减免申请。半夜，我看到原账单和发票作废，生成了新账单和发票，大额费用免掉了。<br>
+<img src="https://s2.loli.net/2024/09/14/SXrxGws1dFCjhoe.png" alt="支持工程师很快回信说帮我申请免除" loading="lazy"><br>
+<img src="https://s2.loli.net/2024/09/14/YrAaQoyOIslvKLZ.png" alt="成功了，官网显示Rebill信息比回信时间更早" loading="lazy"></li>
+</ol>
+<h1 id="经验总结">经验总结</h1>
+<ol>
+<li><strong>常规工单入口很隐蔽</strong> 微软会先根据你的「1.问题描述」，为你智能提供若干「2.推荐的解决方案」，这些都是需要用户自助的。而常规工单入口，只需要你在「2.推荐的解决方案」界面，点「返回支持请求」，此时回到2，再点击「下一步」，就进入了「3.其他详细信息」，可以手动补充信息，创建后可以与支持工程师取得邮件或电话联系。<br>
+<img src="https://s2.loli.net/2024/09/14/kySMiQDuHzTq7sx.png" alt="返回支持请求到步骤2，再点击下一步" loading="lazy"><br>
+微软你藏得好深啊！我都骂娘了要！给老子改！<br>
+<img src="https://s2.loli.net/2024/09/14/TgBIiceNFmq3QlC.png" alt="在步骤3填写需要获得支持的补充信息" loading="lazy"></li>
+<li><strong>发现问题立即发起支持</strong> 按照这个思路，不需要等到账单出来的时候再申请，最好在你发现问题的时候就提出来。否则，你可能像我一样，因担心无法退款，临时调低信用卡单笔支付额度以拒绝支付，导致扣款失败，信用卡短暂冻结。</li>
+</ol>
+<p>希望对大家有帮助，有需要可以联系我。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[记账]]></title>
+        <id>https://phakcc.github.io/post/yGNWwa6rN/</id>
+        <link href="https://phakcc.github.io/post/yGNWwa6rN/">
+        </link>
+        <updated>2024-01-12T05:35:45.000Z</updated>
+        <summary type="html"><![CDATA[<p>说到记账，你可能立马想到各类消费支出，想到细如买瓶水、公交地铁都要记一笔，觉得很累。</p>
+<p>其实记账不只消费这一个种类。近期我开始用<a href="https://youzhiyouxing.cn/">「有知有行」</a>里的记账工具，起初是用于管理投资账户、记录投资过程和评价投资收益的，但它的记账思路给了我启发。随后又体验了<a href="https://www.qianji.app/">「钱迹」</a>，主要侧重收支明细、预算管理、账本管理等。</p>
+<p>这篇文章重新梳理了自己在投资、消费两个方面的记账方式，期间受到<a href="https://www.douban.com/group/topic/243659831/?_i=512270409N1z6p">这篇帖子</a>的启发。两者基础是一致的——对「账户」的分类与设定。然后介绍「有知有行」与「钱迹」分别用于投资记录、消费记录的特点与不足。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>说到记账，你可能立马想到各类消费支出，想到细如买瓶水、公交地铁都要记一笔，觉得很累。</p>
+<p>其实记账不只消费这一个种类。近期我开始用<a href="https://youzhiyouxing.cn/">「有知有行」</a>里的记账工具，起初是用于管理投资账户、记录投资过程和评价投资收益的，但它的记账思路给了我启发。随后又体验了<a href="https://www.qianji.app/">「钱迹」</a>，主要侧重收支明细、预算管理、账本管理等。</p>
+<p>这篇文章重新梳理了自己在投资、消费两个方面的记账方式，期间受到<a href="https://www.douban.com/group/topic/243659831/?_i=512270409N1z6p">这篇帖子</a>的启发。两者基础是一致的——对「账户」的分类与设定。然后介绍「有知有行」与「钱迹」分别用于投资记录、消费记录的特点与不足。</p>
+<!-- more -->
+<h1 id="账户的概念">账户的概念</h1>
+<p>账户分类是记账的关键，账户不应该与各公司的金融产品混淆，账户分类的理念也不应该受这些产品影响。</p>
+<h2 id="零钱账户">零钱账户</h2>
+<p>「零钱账户」理解为不产生投资收益的账户，例如现金、微信零钱、支付宝余额、数字人民币、交通卡、III 类账户，其中有一部分本质上属于储值、圈存。</p>
+<p>「零钱账户」主要用于应付日常小额支出场景，特别是社交相关的小额收支、不支持信用账户支出的商铺消费。如有需要，你也可以很方便地查看账户的收支明细。</p>
+<ul>
+<li>微信零钱场景，例如发红包、收红包、不支持信用卡的商铺消费。</li>
+<li>支付宝余额场景，例如闲鱼收入、不支持信用卡的商铺消费。</li>
+<li>III 类账户场景，例如不支持信用卡的商铺消费。</li>
+</ul>
+<p>「零钱账户」在收入方面关注定期转账总额，支出方面通过账单反映明细，重点是处理好「零钱账户」与「储蓄账户」之间的关系。建议平时集中使用少数几个零钱账户，例如 III 类账户和数字人民币。这个做法实际利好「储蓄账户」——交易明细简洁。实际案例如：</p>
+<ul>
+<li>当零钱账户不够用时，每次定额转2000进去。</li>
+<li>当闲鱼收入到账支付宝余额后你可以立即提现，也可以积攒留作消费使用。</li>
+<li>当收微信红包满1000后就定额提现。</li>
+</ul>
+<h2 id="信用账户">信用账户</h2>
+<p>「信用账户」理解为即先付后还，包括信用卡、支付宝花呗、京东白条等。建议将信用卡作为主要消费支出方式，可以方便地通过信用卡账单实现消费明细汇总。</p>
+<p>「信用账户」不储值，但存在负债。「信用账户」与「储蓄账户」的关系也非常简单，就是信用账户还款，包括还信用卡、还花呗，本质上属于转账，不计收支。</p>
+<h2 id="储蓄账户">储蓄账户</h2>
+<p>「储蓄账户」主要指借记卡，且特指 I 类账户或 II 类账户。在前述消费支出方式下，储蓄账户的收支类型显得更简练了。</p>
+<ul>
+<li>收入。工资收入、提现和转账收入。</li>
+<li>支出。信用账户还款、向零钱账户充值、向投资账户投入。</li>
+</ul>
+<p>需要注意的是，你平时使用支付宝、微信支出时，只要支出账户来自借记卡，那么统统算作「储蓄账户」收支。支付宝、微信本身并不是一个独立账户，而是多个账户的集合，是一个平台。这一点在记账中很容易混淆。</p>
+<h2 id="投资账户">投资账户</h2>
+<p>「投资账户」是指独立记录投资过程、流水和评价其盈亏的账户。</p>
+<ul>
+<li>股票基金，投顾组合、周期灵活的货币基金统统都算。</li>
+<li>支付宝余额宝。</li>
+<li>微信零钱通。</li>
+<li>I 类账户。</li>
+</ul>
+<p>「投资账户」的分类，一般包括「活钱」、「长期」，有些文章对此有阐述。这一分类对记账实际操作没有太大影响，但建议对其多了解了解。</p>
+<p>「投资账户」的具体划定，则因人而异。你可以将每个投资标的划定为一个账户，例如每支基金、股票。也可以将一揽子投资标的组合为一个账户，例如蚂蚁金融上定投的一组基金组合为一个账户，天天基金上定投的一组基金组合为另一个账户。</p>
+<p>「投资账户」中很巧妙的一点是，通过记录人为投入支出、账户初始投入、定期记录账户余额，自然地呈现出投资标的盈亏。例如你不需要记录储蓄卡的利息收入，而将其视作储蓄利息收益。同理，你也不需要记录余额宝每天的利息，期初期末余额自然会帮你算出账户收益。</p>
+<p>需要注意的是，「投资账户」中的被动分红的处理方式，会影响到你的记账。选择分红再投入，会让记账简单一些。</p>
+<h1 id="有知有行的实践">有知有行的实践</h1>
+<p>「有知有行」主要侧重计算、评估投资收益。App 考虑了不同时期投入资金的时间权重，支持记录投资的预期收益，有利于做好投资计划。App 明确不支持对支出划定各种类型，对于消费支出而言，其志不在此。</p>
+<div style="text-align:center">
+    <img src="https://s2.loli.net/2024/01/13/t9nqRukILoQsCDx.png" alt="有知有行界面" title="有知有行界面" style="width:100%;display:inline-block">
+    <img src="https://s2.loli.net/2024/01/13/NocjLE25FrmStZn.png" alt="有知有行目标规划" title="有知有行目标规划" style="width:100%;display:inline-block">
+</div>
+<p>按照我的预期目的，有知有行中只需放入主要的股票、基金、债权等「投资账户」，舍弃掉所有「零钱账户」。实践中，由于「储蓄账户」也存在利息，并且投入到「投资账户」的转账记录中需要记录来源账户，因此我把 I 类「储蓄账户」也放在这里。</p>
+<h1 id="钱迹的实践">钱迹的实践</h1>
+<p>「钱迹」主要侧重收入、支出明细，App 支持预算管理、分期账单管理、多账本管理，支出可选类型丰富。App 目前明确不支持计算「投资账户」的收益情况，期初金额在后期被修改后，会提醒你是否创建平账记录，由此可以看出它对于资产增值、贬值没有做相应的处理，记账仅有支出、收入和转账三种类型。</p>
+<div style="text-align:center">
+    <img src="https://s2.loli.net/2024/01/13/GpF2kHW3hSsRcdr.png" alt="钱迹界面" title="钱迹界面" style="width:100%;display:inline-block">
+    <img src="https://s2.loli.net/2024/01/13/fiNAtTKI4sC2OmF.png" alt="钱迹自动生成平账记录" title="钱迹自动生成平账记录" style="width:100%;display:inline-block">
+</div>
+<p>按照我的预期目的，钱迹中只需放入所有「零钱账户」和「信用账户」。实践中，由于信用卡还款、基金定投等交易记录仍然需要记录目标账户和来源账户，无法与「储蓄账户」、「投资账户」脱离开来，所以我还是将这两类账户再记录一遍。</p>
+<p>对于「零钱账户」和「信用账户」的日常记录，可以考虑每周或每月将信用卡、支付宝、微信账单导出，筛选掉不计收支和其他类型的交易记录后，转填至<a href="https://docs.qianjiapp.com/other/import_templete.html">模板文件</a>，再导入「钱迹」即可。</p>
+<h1 id="后记">后记</h1>
+<p>目前我开始了每周六记账，避开了交易操作、转账操作的高峰期，账户余额能够较好地反映出转账、投入和投出等行为的最终结果。两个 App 中的资产总值存在一定的重叠关系，「钱迹」中的资产总额相对来说更全面。记账的感觉总体很不错，明细数据与统计数据都很清晰，与以前相比，变化主要体现在：</p>
+<ol>
+<li><strong>分类记账</strong>。投资记录中可以将多只基金视作一篮子，投资过程中不关注单只基金的流水与余额；消费记录通过模板定期导入。这两种方法一定程度上都减轻了记账难度，减少「弃坑」心理。</li>
+<li><strong>易于操作</strong>。初期我将原来分散在多个基金平台的历史交易明细迁移至有知有行，除了这个过程稍微繁琐了一些，后期的记账操作其实都很简单、轻松。每周六按部就班看看上周交易明细、看看当日余额，做好记录就行。如果你不关心历史交易明细，那么会更轻松。另外有知有行中的数据可以导出为通用格式，不担心服务中断。</li>
+<li><strong>家底清晰</strong>。资产有多少一目了然。同时我自己管的钱、帮父母管投资的钱划分得清清楚楚，能够独立评价投资效果。</li>
+</ol>
+<p>需要留意的一个功能缺陷是，「钱迹」每月统计情况侧重支出和收入，而没有反映出每月将多少资金用于投资。其原因很简单，是因为投资本质上是个人持有不同账户之间的转账行为，支付宝等平台在账单中也为这类交易记录标记了「不计收支」。</p>
+<p>其实作为投资者，需要观察自己每月的收入用于支出和投资的比例的，消费支出的那一刻，人常常是缺乏感觉的，投资的那一刻，也是类似的。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[sist2 简单易用的全文检索]]></title>
+        <id>https://phakcc.github.io/post/T3vElw6RZ/</id>
+        <link href="https://phakcc.github.io/post/T3vElw6RZ/">
+        </link>
+        <updated>2023-08-04T06:50:50.000Z</updated>
+        <summary type="html"><![CDATA[<p>我的工作要写、参考海量文档，但多台终端获取的海量文件很难整理，全文搜索要建立不小的索引。最近发现 <a href="https://github.com/simon987/sist2">sist2</a>(Simple incremental search tool) 这个简洁的全文搜索项目，帮我实现跨平台访问、搜索并获取文件。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>我的工作要写、参考海量文档，但多台终端获取的海量文件很难整理，全文搜索要建立不小的索引。最近发现 <a href="https://github.com/simon987/sist2">sist2</a>(Simple incremental search tool) 这个简洁的全文搜索项目，帮我实现跨平台访问、搜索并获取文件。</p>
+<!-- more -->
+<p>需要参考的材料，按照定稿程度大致分成两类。正儿八经的网摘、报告、期刊论文都算是完全定稿，我用 Zotero 管了起来。但我还有海量的岗位“前任”留下的文档，以及海量的自己写过的文档，Office 文档、PDF、压缩包……加起来超过 40G，它们称不上“佳作”，但也不是“屎山”，多多少少还是有利用价值的，最大的问题在于我懒得去整理它们</p>
+<p>在海量文档里找素材，属实是大海捞针。公司信息化水平有限，所以信息检索这块，主要靠个人能力。我平时把这些文件都归档存储在 NAS 上，笔记本电脑只放正在跟进的项目。所以，信息检索分成两部分，笔记本电脑上就用 FileLocator 和 Everything，而在 NAS 上，我<a href="https://meta.appinn.net/t/topic/46008/5">一直在找</a>一款能够安装在服务器上、读取现有文件目录、通过 Web 端搜索、支持全文索引和实时搜索的应用。</p>
+<p>在对比了 Mayan EDMS, Paperless-ngx, DocFetcher Server, Recoll, mybase 等等多个方案后，我最终找到了 sist2，经过几天使用，发现它在基本功能实现、易用性、使用模式、成本、性能等方面，都满足了我的需求。</p>
+<figure data-type="image" tabindex="1"><img src="https://cdn.jsdelivr.net/gh/simon987/sist2@master/docs/sist2.gif" alt="sist2" loading="lazy"></figure>
+<h2 id="特性">特性</h2>
+<p>作者对 <a href="https://github.com/simon987/sist2">sist2 特性</a>的介绍我不再赘述，它最吸引我、让我选择它的特性主要是这些：</p>
+<ul>
+<li><strong>效率高</strong>。ElasticSearch 效率很高，资源占用合理。虽然会产生并存储索引，但我有 NAS 无所谓。</li>
+<li><strong>松耦合</strong>。支持基于现有目录，好处是你不需要调整自己的文档备份和存储方式，对我已有的工作流入侵小。不像 nextcloud, Paperless-ngx 等工具那样需要将文档「导入」其文件系统，或是「喂给」其进行处理，使得你必须将这些工具嵌入你的存储工作流。</li>
+<li><strong>中文可用</strong>。对中文关键词的支持还不错，可以通过英文单引号实现中文分词。对比之下，我邮件咨询了 DocFetcher Server，说是完全不支持中文分词，关键词字与字之间是 「或」的关系。</li>
+<li><strong>方便</strong>。支持 Web 端使用，随时随地可查的同时，也使得大量的历史文档不需要保存在笔记本电脑里，减轻了心理负担。</li>
+</ul>
+<h2 id="安装">安装</h2>
+<p>通过 docker 安装和运行 sist2 是最简便的，也最适合 NAS。</p>
+<pre><code class="language-yml">version: &quot;3&quot; 
+services: 
+    elasticsearch: 
+        image: elasticsearch:7.17.9 
+        restart: unless-stopped 
+        environment: 
+            - &quot;discovery.type=single-node&quot; 
+            - &quot;ES_JAVA_OPTS=-Xms2g -Xmx2g&quot; 
+            - TZ=Asia/Shanghai 
+        volumes: 
+            - esdata:/usr/share/elasticsearch/data 
+        networks: 
+            network1: 
+                ipv4_address: 10.0.6.2 
+    sist2-admin: 
+        image: simon987/sist2:3.4.0-x64-linux 
+        restart: unless-stopped 
+        volumes: 
+            - /path/to/sist2-admin-data/:/sist2-admin/ 
+            - /path/to/your/docs:/host 
+        environment: 
+            - TZ=Asia/Shanghai 
+        ports: 
+            - 4090:4090 # sist2 
+            - 8080:8080 # sist2-admin 
+        working_dir: /root/sist2-admin/ 
+        entrypoint: python3 /root/sist2-admin/sist2_admin/app.py 
+        networks: 
+            network1: 
+                ipv4_address: 10.0.6.1 
+    networks: 
+        network1: 
+            name: bridge1 
+            external: true 
+    volumes: esdata:
+</code></pre>
+<ol>
+<li>建议设置时区，任务日志中的执行时间看起来更直观。</li>
+<li>建议为 es 服务设置卷。项目仓库文档中 elasticsearch 服务没有设置存储，假如你删除了容器、重新部署，前端页面可能会提示 <a href="https://github.com/simon987/sist2/issues/398"><code>sist2-web 在连接 elasticsearch 的时候出现错误</code></a>（3.1.4 版本）。虽然重新运行一遍扫描可以解决这个问题，但太耗费时间。本文的 compose 文件中为 es 设置了 volume 而非 bind mount，是因为后者经常因<a href="https://github.com/simon987/sist2/issues/398#issuecomment-1654908009">权限问题</a>导致 es 服务反复重启、影响使用。</li>
+</ol>
+<h2 id="配置">配置</h2>
+<h3 id="sist2-admin">sist2-admin</h3>
+<p>通过 <code>IP:8080</code> 访问 sist2-admin，这是管理员控制面板，主要分为 Backends「后端」、User Scripts「用户脚本」和 Frontends「前端」三个版块，右上角可以切换至 Tasks「任务」版块，可以查看所有正在或已经完成的任务。</p>
+<figure data-type="image" tabindex="2"><img src="https://s2.loli.net/2024/01/11/kUtWEb4onZGzYQi.png" alt="sist2-admin" loading="lazy"></figure>
+<h3 id="配置后端">配置「后端」</h3>
+<p>「后端」主要管理 Search backends「搜索后端」和 Jobs「负载」。</p>
+<p>「搜索后端」用于创建、定义一系列搜索引擎。创建主要指设置搜索引擎的名称，定义主要指设置搜索引擎的类型如 sqlite 或 es，其中 es 类型在定义时选择 es 实例（即创建的容器）。理论上你可以在不同的服务器上运行多个 es 实例，通过定义搜索引擎将它们引入 sist2，例如称作 es1, es2, 等等。</p>
+<figure data-type="image" tabindex="3"><img src="https://s2.loli.net/2024/01/11/gwIYMm7Ztdz4GPc.png" alt="Search backends" loading="lazy"></figure>
+<p>「负载」用于创建和定义一系列负载任务，负载可以看作是一组文档资源、索引参数和索引结果的组合。例如 job1 用于搜索下载的期刊论文， job2 用于搜索微信接收文件夹。以后你可以根据使用目的、用户、权限的差异，将它们自由组合，通过不同的「前端」来访问。「负载」的定义内容主要包括文件路径、扫描计划、搜索引擎、文件类型筛选、OCR 选项、压缩包扫描选项、缩略图选项、用户脚本选项。首次扫描、计划扫描的执行情况都可以在「任务」里查看。</p>
+<figure data-type="image" tabindex="4"><img src="https://s2.loli.net/2024/01/11/2iFxI6vHqUWfTOz.png" alt="Jobs" loading="lazy"></figure>
+<h3 id="配置前端">配置「前端」</h3>
+<p>「前端」用于创建和定义一系列可访问的搜索入口页面。它主要包括监听端口、可用负载、身份认证选项、Web 参数等。</p>
+<p>由于出现过一些<a href="https://github.com/simon987/sist2/issues/400">小问题</a>，Web options 之类的应该需要在 offline 状态下修改。</p>
+<p>如果想要通过互联网远程使用，且你的资源不想公开，至少要基础的用户名密码认证，但建议配置更安全的 <a href="https://github.com/simon987/sist2/blob/master/docs/auth0.md">Auth0</a>，如果国内有类似服务并且调用模式类似的，欢迎推荐给我。</p>
+<figure data-type="image" tabindex="5"><img src="https://s2.loli.net/2024/01/11/SqXJHubznEhAcVG.png" alt="Frontend" loading="lazy"></figure>
+<h2 id="使用">使用</h2>
+<h3 id="访问">访问</h3>
+<p>内外网访问均支持，其中外网访问可以采用 frp 和反向代理等。</p>
+<figure data-type="image" tabindex="6"><img src="https://s2.loli.net/2023/08/04/OnQ9hxFvRfwopl5.png" alt="" loading="lazy"></figure>
+<h3 id="更新数据">更新数据</h3>
+<p>sist2 通过定义「负载」，使得在搜索时可以方便地筛选不同类别的文档资源。</p>
+<p>基于这个理念，为了更好地更新这些文档资源，能源源不断地搜索新的文档，我建议你对文档资源的存储方式做适当整理。例如考虑到文档形成方式（接收？创作？）、更新方式（同步盘？FTP？）、整理程度（人工整理？无脑汇总？）、参考价值（垃圾文档多？优质文档多？）。</p>
+<p>举个例子，考虑上述因素，我把存量文档分成了 IM 接收文档、自己整理的资料库、归档项目、跟进中项目等多个目录。定期通过 FreeFileSync 将笔记本电脑中对应目录中的新增文件，更新至 NAS。另一种方式是通过坚果云同步盘，每天定时将跟进中的项目文件，从云端更新至 NAS。</p>
+<h3 id="更新索引">更新索引</h3>
+<p>sist2 中的「负载」支持定时扫描、更新索引，因此你在搜索新文档时速度更快。这里的扫描参数有很多，可以研究相关文档。</p>
+<figure data-type="image" tabindex="7"><img src="https://s2.loli.net/2024/01/11/Qa5CJhdlpkvyn86.png" alt="Scanning options" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[开始用 Home Assistant]]></title>
+        <id>https://phakcc.github.io/post/Hc2jeByXQ/</id>
+        <link href="https://phakcc.github.io/post/Hc2jeByXQ/">
+        </link>
+        <updated>2023-06-27T06:44:49.000Z</updated>
+        <summary type="html"><![CDATA[<p>入夏天热，我有鼻炎对干燥冷空气敏感，晚上需要自动开关空调。之前买了很多米家产品，最近研究起了 Home Assistant（简称 HA）。谈谈我近一个月的使用过程和体验。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>入夏天热，我有鼻炎对干燥冷空气敏感，晚上需要自动开关空调。之前买了很多米家产品，最近研究起了 Home Assistant（简称 HA）。谈谈我近一个月的使用过程和体验。</p>
+<!-- more -->
+<figure data-type="image" tabindex="1"><img src="https://s2.loli.net/2024/01/11/lJi9hNXgOE2x7c8.png" alt="" loading="lazy"></figure>
+<h2 id="ha-还是米家">HA 还是米家？</h2>
+<p>我最初买的大多是米家系列产品，后来陆陆续续也买了其他品牌的配件，再加上我有一些比较复杂的自动化需求，米家的功能逐渐无法满足我了。HA 则有这些优点：</p>
+<ul>
+<li><strong>自动化能力强大</strong>。触发类型、环境条件参数都是很丰富的。</li>
+<li><strong>提供脚本和场景功能</strong>。脚本可以看作一系列设备控制动作的组合，场景可以看作一系列设备状态、自动化激活状态的组合，例如回家场景包括空调制冷状态25度、窗帘打开状态。自动化则包含了触发、判断和执行动作的组合，执行动作也可以调用脚本、启停场景，实现三者的联动、构成了更强大的家具自动化。</li>
+<li><strong>跨厂商兼容性</strong>。HA 的「集成」非常强大，可以理解为插件，不仅支持集成米家、涂鸦等第三方智能家居平台，也支持 Onvif 等开放协议。</li>
+</ul>
+<h2 id="安装">安装</h2>
+<p>我主要通过 docker 容器安装 HA，并通过内网穿透、反向代理的方式进行远程访问。</p>
+<h2 id="集成">集成</h2>
+<p>「集成」是 HA 中的插件管理器，用来将外部平台的数据、设备、服务接入 HA。在 HA 中一般通过 HACS(Home Assistant Community Store) 来查询、浏览和安装社区提供的各种集成。目前我在用的有：</p>
+<ul>
+<li>Xiaomi Miot Auto：基于 miot 标准实现的集成插件，用于接入兼容 miot 的设备，具体表现为支持米家 App 中的设备。</li>
+<li>MiWiFi：用于小米路由器。</li>
+<li>Ubiquiti EdgeOS Routers：用于 Ubnt EdgeRouter X 路由器。</li>
+<li>Tuya：用于接入涂鸦智能平台中的设备。</li>
+<li>Transmission：用于生成种子面板，监控活跃情况、上传下载情况。</li>
+</ul>
+<h2 id="miot">miot</h2>
+<p>miot 是小米的物联网平台，同时相对规范地定义了米家智能家居设备的参数、控制方式。miot 设备有的支持云端更新，有的还支持本地更新，前者需要米家账号且经过米家服务器，后者则可以在只有局域网的环境下保持联通。你可以在 <a href="https://home.miot-spec.com/">Xiaomi Miot Spec</a> 里查看设备类型，标注<code>miot-local</code> 的就是支持本地更新的。</p>
+<h2 id="通讯蓝牙-or-zigbee">通讯：蓝牙 or zigbee</h2>
+<p>讨论蓝牙和 zigbee，实际上是在讨论「设备网关」与智能家居设备的通讯方式。「设备网关」很重要，有的通用网关可以直接接入 HA，有的则先接入米家等第三方平台，再经 miot 这类集成接入 HA。</p>
+<p>「设备网关」与智能家居设备的通讯方式实际上不仅仅只有蓝牙、zigbee，还包括 WiFi。为了管理多种通讯协议的智能家居设备，多模设备网关应运而生。需要注意的是，市面上的网关有的要求联网运行，有的支持离线运行，要仔细分辨自己的需求。</p>
+<p>蓝牙和 zigbee 的主要区别在耗电量、数据上报率等方面，<a href="https://zhuanlan.zhihu.com/p/477640215">有些文章</a>做了介绍。WiFi 虽然万能，但受限于网络基础设施状况，设备数量大的时候也会影响家用网络。目前在市场化利益考量下，米家设备通讯方式主要是 WiFi 和蓝牙。开放社区和市场则普遍支持 zigbee。</p>
+<h2 id="集成homekit-bridge">集成：Homekit Bridge</h2>
+<p>Homekit Bridge 是一款集成，可以将 HA 中的设备转换成 Homekit 能识别的设备，最终表现是你可以在 iOS 「家庭」App 中使用。设备接入的方式主要有两种，一种是桥接（bridge），可以一次性接入一系列设备，另一种是配件（accessories），用于接入单个设备。</p>
+<p>我体验了一段时间，发现非官方设备的管理方式非常混乱，最终停用了。</p>
+<ul>
+<li>米家很多设备都带有指示灯、开关，例如摄像头的指示灯、智能开关的指示灯，最终被 Homekit Bridge 识别成独立灯光设备、独立开关设备，并没有与摄像头或智能开关设备主体绑定，你会在 App 中看到很多设备，非常混乱。</li>
+<li>如果你没有 Apple TV 或 HomePod 作为家庭中枢，那么就只能在局域网环境使用家庭 App，无法远程查看和控制。</li>
+</ul>
+<h2 id="设备空调伴侣-or-通用红外遥控">设备：空调伴侣 or 通用红外遥控</h2>
+<p>这是个比较有意思的话题，两种产品我都购买了，也都能找到办法控制空调。</p>
+<ul>
+<li><strong>通用红外遥控</strong>。这是号角鲸出品的遥控器（涂鸦生态），里面有很多码库能匹配我房间的空调。问题出在，当将设备通过涂鸦开发者账号接入 HA 后不会生成可控制的实体，操纵空调主要依靠涂鸦智能 App 和小爱同学语音（对，它支持用小爱操控）。于是，我在 HA 中利用小爱语音指令服务，将开关空调、调整温度编写成脚本，再编写自动化。由于小爱同学经常有延迟、丢指令的情况，编排脚本时最好加上等待时间。</li>
+<li><strong>空调伴侣</strong>。Aqara 空调伴侣 P3，附带了一个温湿度传感器，还挺贵的。买来接入米家 App 是有点坎坷，但匹配遥控码之后我就明白了，原来它通过联合温湿度传感器，模拟出了比较完整的空调，包括感知/记忆当前空调开关状态、温度、面板灯光状态等，App 端好用程度大幅提升。在接入 HA 之后还会生成空调设备实体，可以控制工作模式、风速、摆风，写脚本的时候也能直接使用实体了，而不需要调用小爱同学语音指令（当然也支持小爱）。这个设备同时还是一个 zigbee 网关，不过是云端更新方式，主要依靠 App 管理子设备，要想通过 HA 管理这个网关，会很麻烦。</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[NAS自签名证书的一种实践]]></title>
+        <id>https://phakcc.github.io/post/9yyOCcB_x/</id>
+        <link href="https://phakcc.github.io/post/9yyOCcB_x/">
+        </link>
+        <updated>2023-02-07T05:49:21.000Z</updated>
+        <summary type="html"><![CDATA[<p>这篇文章针对个人或家庭用途的 NAS 等私有服务器场景，阐述基于没有公共域名的背景下，虚构 CA 并自签名证书的一种实践过程、问题及解决办法，实现纯 IP 地址的 https 访问。涉及的主题包括：利用 openssl 签发证书、在域名与 IP 地址混合访问场景（也包括纯 IP 访问场景）启用 https、iOS 添加自签名证书等。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>这篇文章针对个人或家庭用途的 NAS 等私有服务器场景，阐述基于没有公共域名的背景下，虚构 CA 并自签名证书的一种实践过程、问题及解决办法，实现纯 IP 地址的 https 访问。涉及的主题包括：利用 openssl 签发证书、在域名与 IP 地址混合访问场景（也包括纯 IP 访问场景）启用 https、iOS 添加自签名证书等。</p>
+<!-- more -->
+<p>通常消费级 NAS 提供 Web 管理界面，用户通常会在 NAS 上发布 Web 应用页面或接口，例如 Jellyfin、owncloud、aria2 jsonrpc 等。如果在酒店、咖啡厅、公司等环境通过公共网络以 http、ws 等非加密方式访问这些服务，用户名和口令是很容易被截取，进而形成安全问题。因此很有必要对需要在外部网络访问的服务进行 SSL 加密。</p>
+<figure data-type="image" tabindex="1"><img src="https://s2.loli.net/2023/02/08/KDtEepqziNmyrY5.png" alt="使用多种 IP 地址访问均能确保安全" loading="lazy"></figure>
+<h2 id="1-需求">1 需求</h2>
+<ol>
+<li>
+<p>要求采用先“创建 CA 、为其他服务器签发证书”的模式。CA 是指证书管理机构（Certificate Autority），在公共 PKI 体系下，CA 是具有公共信任的机构，而在自签名场景中，CA 是虚构的信任中心。采用该模式的目的是为了便于管理，终端设备仅需信任一个根证书后就可以自动信任由其签发的其他证书。</p>
+</li>
+<li>
+<p>在终端设备信任根证书后，由根证书签发的其他服务器证书在终端设备上不会弹出各种类型的证书错误页面。</p>
+</li>
+<li>
+<p>以 QNAP NAS 的 QTS 系统为例，自签名证书应能应用到所有可用的 HTTP 访问方式上。</p>
+</li>
+</ol>
+<ul>
+<li>威联通免费域名 <code>DN.1</code> <code>exampleserver.myqnapcloud.cn</code>：威联通（中国）DDNS 服务提供的域名。由于我没有 IPv4 公网地址，此处是解析 IPv6 公网地址。</li>
+<li>家庭局域网 <code>IP.1</code> <code>192.168.50.200</code>。</li>
+<li>设备的 ZeroTier 私有地址 <code>IP.2</code> <code>192.168.192.200</code>：这是 NAS 在 Zerotier 私网中的托管 IPv4 地址。</li>
+<li>反向代理 frps 所在服务器的公有地址 <code>IP.3</code> <code>101.101.101.101</code>：通过在腾讯云轻量应用服务器搭建的 frps，反向代理 NAS Web 服务。</li>
+</ul>
+<h2 id="2-基本过程和方法">2 基本过程和方法</h2>
+<h2 id="21-创建-ca-私钥">2.1 创建 CA 私钥</h2>
+<p>你可以将 CA 私钥看做虚构证书管理机构的钥匙。CA 私钥主要用于创建 CA 证书、为服务器证书签名。</p>
+<p>这一步的目标是生成 <code>ca.key</code>。主要工具是 <code>openssl genrsa</code>。由于 QTS 系统目前不支持 ECDSA 加密，本文均采用 RSA 加密。</p>
+<pre><code class="language-bash">openssl genrsa -out ca.key 2048
+</code></pre>
+<h2 id="22-创建-ca-证书申请文件csr">2.2 创建 CA 证书申请文件（CSR）</h2>
+<p>CSR 是证书签名请求，它以文件为载体，记载了证书用途等基本信息，由证书需求方向 CA 秘钥持有人、CA 证书持有人发起申请。</p>
+<p>这一步的目标是生成 <code>ca.csr</code>。主要工具是 <code>openssl req</code>。有的文章会告诉你通过一条命令生成私钥、证书，本文为了便于尝试、验证，先创建配置文件 <code>ca.cnf</code>，再由配置文件创建 CSR。</p>
+<pre><code class="language-json">[req] 
+days = 730 
+prompt = no 
+default_md = sha256 
+default_bits = 2048 
+req_extensions = v3_req 
+distinguished_name = dn 
+utf8 = yes 
+
+[dn] 
+C = CN 
+O = myOname 
+OU = caOUname 
+CN = caCN 
+
+[v3_req] 
+basicConstraints = CA:true
+</code></pre>
+<p>注：一般教程中，<code>[dn]</code> 一节中还有其他诸多字段，由于我没需求，所以做了简化。</p>
+<pre><code class="language-bash">openssl req -sha256 -config ca.cnf -key ca.key -new -out ca.csr
+</code></pre>
+<h2 id="23-签发-ca-证书">2.3 签发 CA 证书</h2>
+<p>CA 证书是你所有终端设备的信任中心点，是服务器站点信任链的起源。CA 证书用于为服务器证书签名。因此这一阶段签发证书不需要上级证书。</p>
+<p>这一步的目标是生成 <code>ca.crt</code>，根据需要转换为 <code>ca.pem</code>。主要工具是 <code>openssl x509</code>。</p>
+<pre><code class="language-bash">openssl x509 -req -sha256 -days 730 -in ca.csr -signkey ca.key -out ca.crt -extfile erx.cnf -extensions v3_req openssl x509 -in ca.crt -out ca.pem
+</code></pre>
+<h2 id="24-创建服务器私钥">2.4 创建服务器私钥</h2>
+<p>不同的服务器、WEB应用可以用不同的私钥来标识身份，生成对应的证书来声明不同的用途。例如 NAS 的 WEB 管理页面，与托管在 NAS 上的 Plex 服务，IP 地址不同，你既可以用一个证书包含所有可能的 IP，也可以为它们分别生成证书。</p>
+<p>这一步的目的是生成 <code>server.key</code>。</p>
+<pre><code class="language-bash">openssl genrsa -out server.key 2048
+</code></pre>
+<h2 id="25-创建服务器-csr">2.5 创建服务器 CSR</h2>
+<p>由服务器作为主体，用 CSR 作为请求，向 CA 申请签名、形成证书。</p>
+<p>这一步的目的是生成 <code>server.cnf</code>、<code>server.csr</code>。</p>
+<pre><code class="language-json">[req]
+days = 365
+prompt = no
+default_md = sha256
+default_bits = 2048
+distinguished_name = dn
+req_extensions = v3_req
+utf8 = yes
+
+[dn]
+C = CN
+O = myOname
+OU = serverOUname
+CN = serverCN
+
+[v3_req]
+basicConstraints = CA:false
+subjectAltName = @alt_names
+
+[alt_names]
+DNS.1 = exampleserver.myqnapcloud.cn
+IP.1 = 192.168.50.200
+IP.2 = 192.168.192.200
+IP.3 = 101.101.101.101
+</code></pre>
+<pre><code class="language-bash">openssl req -sha256 -config server.cnf -key server.key -new -out server.csr
+</code></pre>
+<h2 id="26-签发服务器证书">2.6 签发服务器证书</h2>
+<p>通过 CA 私钥和 CA 证书，对服务器的申请签名、生成服务器证书。</p>
+<p>这一步的目的是生成 <code>server.crt</code>，根据需要转换为 <code>server.pem</code>。</p>
+<pre><code class="language-bash">openssl x509 -req -sha256 -days 365 -in server.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out server.crt -extfile server.cnf -extensions v3_req openssl x509 -in server.crt -out server.pem
+</code></pre>
+<h2 id="27-在终端设备信任-ca-证书">2.7 在终端设备信任 CA 证书</h2>
+<p>在 Windows、macOS、iOS、iPadOS 等终端设备中，将 <code>ca.pem</code> 添加至受信任的根证书存储区。需要注意的是，Firefox 使用软件内置的证书管理模块，而不是直接采信操作系统的信任证书。</p>
+<h2 id="28-在服务器中安装服务器证书">2.8 在服务器中安装服务器证书</h2>
+<p>以威联通 NAS 为例（QTS系统）。通过 http 方式访问，转到控制台 &gt; 系统 &gt; 安全 &gt; 证书和私钥，转到服务器证书，点击取代当前证书，选择导入证书，分别上传 <code>server.pem</code>、<code>server.key</code>，点击&quot;应用&quot;。退出登录后再通过 https 方式访问，并确认浏览器没有报任何警告、错误。</p>
+<h2 id="3-问题和解决">3 问题和解决</h2>
+<h2 id="31-证书错误">3.1 证书错误</h2>
+<p>常见证书错误之一，是证书是由未知（未受信任）的主体签发的。在公共 CA 体系下，用户通常向具有公信力的 CA 机构申请证书，这些 CA 机构的证书已经内置在主流操作系统、浏览器的证书信任链中，由其签发的各类证书很容易被验证是由可信机构签发的。在自签名体系下，这个问题显而易见是固有的。如果直接创建服务器私钥、自签名证书，随着服务器数量增加、服务器证书增加，你会更经常碰到这个问题。因此这篇文章采取先创建 CA 的方式来签发其他证书。</p>
+<p>常见证书错误之二，是证书的通用名无效。证书的通用名 <code>commonName</code> 是证书的主要属性之一，一般填写站点的域名或泛域名，不包含 http 或 https 等协议名，也不包含端口。上述错误主要是因为用户当前访问站点所使用的链接与证书所认证的链接不一致，例如用户正访问子域名 <code>sub.example.com</code>，而证书只认证了 <code>www.example.com</code>；例如通过家用局域网 IP 访问 NAS，而证书中没有包含局域网 IP 地址。那么有没有可能在一个证书中认证多个域名或 IP 地址呢？答案是可以的，x.509 证书扩展选项的 <code>subject alternative names(SAN)</code> 可以解决这个问题。见 <strong>2.5</strong>。</p>
+<figure data-type="image" tabindex="2"><img src="https://s2.loli.net/2023/02/08/XU82CL7mY95tFMu.png" alt="可以在一个证书中设置多个域名/泛域名和 IP" loading="lazy"></figure>
+<h2 id="32-x509-命令在签发服务器证书时没有拷贝请求中的扩展字段">3.2 x509 命令在签发服务器证书时没有拷贝请求中的扩展字段</h2>
+<p>早期尝试过程中，签发证书的命令如下。虽然在 CSR 中指定了 SAN，但签发出来的证书却缺少该扩展字段。如果导入服务器，会提示通用名无效的错误。</p>
+<pre><code class="language-bash">openssl x509 -req -sha256 -days 365 -in server.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out server.crt
+</code></pre>
+<p>查找资料发现，这一设计并非 x509 命令的 bug，而是基于安全性考虑。一般推荐 <code>openssl ca</code> 命令来实现 copy_extensions 的目的，换句话说，copy_extensions 是为 <code>ca</code> 而非 <code>x509</code> 命令设计的。但使用 <code>openssl ca</code> 的前期配置相对麻烦，需要建立相对完整的 CA 配置结构。</p>
+<p>后来我找到一种相对折中的办法，可以在使用 x509 命令的前提下拷贝申请中的扩展字段，即 <strong>2.3</strong> 与 <strong>2.6</strong> 命令中的 <code>-extfile erx.cnf -extensions v3_req</code>。</p>
+<h2 id="33-x509-命令在签发服务器证书时没有包含请求中的有效期限">3.3 x509 命令在签发服务器证书时没有包含请求中的有效期限</h2>
+<p>早期尝试过程中，由于 CSR 中已经设置了 <code>days</code>，我便将签发服务器证书命令中的 <code>-days xxx</code> 移除了。实际上应该在 <code>x509</code> 命令中指定 <code>days</code>。</p>
+<h2 id="34-在-qts-中上传服务器私钥提示无效">3.4 在 QTS 中上传服务器私钥提示无效</h2>
+<p>QTS 不支持 ECDSA 加密，建议使用 RSA 加密，且长度不超过 2048 位。见这篇<a href="https://forum.qnap.com/viewtopic.php?t=164839">帖子</a> 。</p>
+<h2 id="35-ios-ipados-中如何信任自有-ca-证书">3.5 iOS / iPadOS 中如何信任自有 CA 证书</h2>
+<ol>
+<li>
+<p>通过打开 PEM 证书添加描述文件并安装<br>
+建议通过邮件附件形式，将 <code>ca.pem</code> 发送到 iOS / iPadOS 设备，在邮件 App 中打开该附件，会提示已添加描述文件、到&quot;设置&quot;中进行进一步操作。打开&quot;设置&quot;，会在&quot;Apple ID&quot;与&quot;飞行模式&quot;之间发现新增一栏选项，点击进入，并安装描述文件。</p>
+</li>
+<li>
+<p>启用对根证书的完全信任<br>
+安装描述文件后，转到&quot;设置&quot;-&quot;通用&quot;-&quot;关于本机&quot;-&quot;证书信任设置&quot;，将出现新的一栏，即与描述文件匹配的根证书信任选项。启用即可。</p>
+</li>
+</ol>
+<h2 id="结语">结语</h2>
+<p>目前我已经为自己托管的这些服务使用上了 SSL</p>
+<ul>
+<li>威联通 NAS Web 页面 <code>https</code></li>
+<li>EdgeRouter-X 路由器 Web 页面 <code>https</code></li>
+<li>Portainer Web 页面 <code>https</code></li>
+<li>Jellyfin Web 页面 <code>https</code></li>
+<li>FRPS 服务端控制面板页面 <code>https</code></li>
+<li>aria2 jsonrpc 接口 <code>https</code> <code>wss</code></li>
+</ul>
+<h2 id="后记">后记</h2>
+<p>上述实践的背景是，当时我缺少域名，需要保障纯 IP 访问的安全性。后来我发现，为每个 IP 签发证书实际上也给管理带来很大压力。后来我申请了域名，为 aria2, transmission, jellyfin 等每个服务以二级域名的方式做了 frp 穿透和反向代理，同时为 IPv6 地址的域名访问单独做了反向代理，统一签发使用一个自签名的泛域名证书，才真正实现了“易于管理”的目标。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[视频转码时保留元数据]]></title>
+        <id>https://phakcc.github.io/post/y-xflXZFC/</id>
+        <link href="https://phakcc.github.io/post/y-xflXZFC/">
+        </link>
+        <updated>2021-12-28T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>最近有几个旧相机拍摄的视频需要转码，但转码后发现相机生产商、相机型号、视频创建日期等元数据丢失。这篇文章记录了一次用 exiftool 保留视频文件元数据的实践。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>最近有几个旧相机拍摄的视频需要转码，但转码后发现相机生产商、相机型号、视频创建日期等元数据丢失。这篇文章记录了一次用 exiftool 保留视频文件元数据的实践。</p>
+<!-- more -->
+<p>转码的需求主要来源是，我需要用 digikam 来管理照片和视频，而这些视频的编码格式不受软件支持。这些视频是用 PENTAX Optio H90 拍摄的，封装格式为 AVI。</p>
+<p>保留元数据的目的是，我希望在 digikam 中能通过拍摄时间、相机型号对照片和视频排序。</p>
+<p>注：下列 shell 环境主要为 Powershell。</p>
+<h2 id="1-源文件元数据分析">1 源文件元数据分析</h2>
+<p>查看视频文件的元数据</p>
+<pre><code class="language-shell">exiftool -G1 -s -a
+</code></pre>
+<h2 id="11-设备型号">1.1 设备型号</h2>
+<ul>
+<li>名为 <code>MakerNotes</code> 的元数据节中记录了 <code>Make</code> 和 <code>Model</code>。但这似乎是设备厂商自定义的元数据节。</li>
+<li>标准的 <code>EXIF</code> 元数据节中没有记录设备型号。因此即便是源文件，也无法被主流软件读出设备型号。</li>
+</ul>
+<h2 id="12-拍摄时间">1.2 拍摄时间</h2>
+<ul>
+<li>仅有名为 <code>RIFF:DateTimeOriginal</code> 的元数据标签记录了视频的拍摄时间。</li>
+</ul>
+<h2 id="2-转换结果分析">2 转换结果分析</h2>
+<p>使用 Adobe Media Encoder 转码后文件的元数据情况如下：</p>
+<ul>
+<li>设备型号。<code>MakerNotes</code> 全部丢失，<code>Make</code> 丢失，<code>Model</code> 丢失；</li>
+<li>拍摄时间。<code>RIFF:DateTimeOriginal</code> 被存储至 <code>XMP-exif:DateTimeOriginal</code>，但在 macOS 访达、digikam 中，该元数据无法被识别为拍摄时间；</li>
+<li>其他时间。新增的 <code>QuickTime:CreateDate</code>、<code>QuickTime:ModifyDate</code>、<code>XMP-xmp:CreateDate</code>、<code>XMP-xmp:ModifyDate</code> 元数据标签均为转码时间，即新文件创建时间，而非拍摄时间。</li>
+</ul>
+<p>关于拍摄时间的问题，经过了解，一般认为，<code>XMP-exif</code> 不是标准元数据节，<code>xmp-tiff</code> 更为通用。</p>
+<h2 id="3-解决问题">3 解决问题</h2>
+<p>目标很明确，要在主要应用程序中正确读取到上述数据。</p>
+<h2 id="31-增加设备型号元数据">3.1 增加设备型号元数据</h2>
+<p>经过测试，<code>xmp-tiff</code> 是设备型号数据常用的元数据节，可以被访达、digikam 读取。根据前面的分析，由于转码后设备型号被丢弃，这里需要对转码后的视频文件进行手动写入元数据。对同一批旧视频、器材一致的情况，需要写入的内容是固定的，比较好操作。</p>
+<pre><code class="language-shell"># 单个文件的处理 exiftool -Make='PENTAX' -Model='PENTAX Optio H90' IMGP0982.mp4
+# 批量文件的处理，Winodws exiftool -Make='PENTAX' -Model='PENTAX Optio H90' mp4
+</code></pre>
+<p>上述命令实现的结果是，将 <code>Make</code> 和 <code>Model</code> 写入到目标文件 <code>xmp-tiff</code> 元数据节下。</p>
+<h2 id="32-复制拍摄时间元数据">3.2 复制拍摄时间元数据</h2>
+<p>经过测试，<code>XMP-xmp</code>、<code>QuickTime</code> 是拍摄时间数据常用的元数据节。根据前面的分析，由于拍摄时间未丢失，这里需要依据每一个目标文件的 <code>XMP-exif:DateTimeOriginal</code> 来更新 <code>XMP-xmp</code>、<code>QuickTime</code> 等元数据节中的时间标签。</p>
+<pre><code class="language-shell"># 单个文件的处理 exiftool &quot;-AllDates&lt;XMP-exif:DateTimeOriginal&quot; IMGP0982.mp4
+# 批量文件的处理，macOS exiftool &quot;-AllDates&lt;XMP-exif:DateTimeOriginal&quot; mp4
+</code></pre>
+<p>执行后，目标文件的日期时间相关元数据标签被改写，包括：</p>
+<ul>
+<li><code>QuickTime:CreateDate</code></li>
+<li><code>QuickTime:ModifyDate</code></li>
+<li><code>XMP-xmp:CreateDate</code></li>
+<li><code>XMP-xmp:ModifyDate</code></li>
+<li><code>UserData:DateTimeOriginal</code></li>
+</ul>
+<p>至于 <code>ModifyDate</code>，我个人倾向于认为是媒体文件被修改的时间，例如截取、裁剪、信息修改等，虽然也被调整为拍摄时间，但拍摄时间比较重要，也就无所谓了。</p>
+<h2 id="参考">参考</h2>
+<ul>
+<li><a href="https://exiftool.org/TagNames/Shortcuts.html">exiftool shortcuts tags</a></li>
+</ul>
+]]></content>
+    </entry>
+</feed>
